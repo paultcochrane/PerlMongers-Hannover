@@ -33,6 +33,8 @@ Version 0.01
     
     info();
 
+    $ PERL5LIB=lib perl -Ilib -mPerlMongers::Hannover=info -e 'info()'
+
 =head2 Website
 
 http://hannover.pm
