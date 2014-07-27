@@ -60,7 +60,7 @@ The code repository for this package is available at:
 
 L<https://github.com/paultcochrane/PerlMongers-Hannover>
 
-    git clone https://https://github.com/paultcochrane/PerlMongers-Hannover.git
+    git clone https://github.com/paultcochrane/PerlMongers-Hannover.git
 
 =head1 AUTHOR
 
