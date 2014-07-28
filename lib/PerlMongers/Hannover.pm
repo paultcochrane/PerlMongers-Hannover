@@ -97,6 +97,8 @@ modeled after C<PerlMongers::Bangalore>.
 
 =head1 COPYRIGHT AND LICENSE
 
+This software is copyright (c) 2014 by Hannover Perl Mongers.
+
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
 
