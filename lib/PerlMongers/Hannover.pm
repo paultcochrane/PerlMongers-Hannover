@@ -30,7 +30,7 @@ Version 0.01
 =head1 SYNOPSIS
 
     use PerlMongers::Hannover qw(info);
-    
+
     info();
 
 =head2 Website
