@@ -51,8 +51,8 @@ L<mailto:hannover-pm@pm.org>
 
 =head2 Meetups
 
-Every second Tuesday at 6pm; date and location details announced via
-Twitter, email and via the web site:
+Every even calendar week Tuesday at 6pm; date and location details announced
+via Twitter, email and via the web site:
 
 http://hannover.pm/treffen
 
