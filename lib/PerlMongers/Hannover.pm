@@ -9,7 +9,7 @@ require Exporter;
 @ISA = qw(Exporter);
 @EXPORT_OK = qw(info);
 
-use 5.010000;
+use v5.10.1;
 
 sub info {
     system('perldoc', __PACKAGE__);
