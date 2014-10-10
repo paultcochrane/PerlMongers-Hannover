@@ -9,6 +9,9 @@ use Capture::Tiny qw(capture_stdout);
 require_ok('PerlMongers::Hannover');
 
 {
+    # add "lib" to Perl's path, so perldoc will see it in "plain" perl tests
+    # i.e. tests run directly from perl, not via prove etc.
+    $ENV{"PERL5LIB"} = $ENV{"PERL5LIB"} ? $ENV{"PERL5LIB"} . ":lib" : "lib";
     use PerlMongers::Hannover qw(info);
     my $stdout = capture_stdout { info() };
 
