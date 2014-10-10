@@ -15,3 +15,4 @@ install:
 
 script:
     - dzil test --author --release
+    - perl -Ilib t/*.t
