@@ -4,10 +4,11 @@ use autodie;
 
 use Test::More tests => 3;
 
+use Capture::Tiny qw(capture_stdout);
+
 require_ok('PerlMongers::Hannover');
 
 {
-    use Capture::Tiny qw(capture_stdout);
     use PerlMongers::Hannover qw(info);
     my $stdout = capture_stdout { info() };
 
