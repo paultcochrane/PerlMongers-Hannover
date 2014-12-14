@@ -14,7 +14,9 @@ use Pod::Text;
 
 sub info {
     my $parser = Pod::Text->new(sentence => 0, width => 78);
-    $parser->parse_file(__FILE__);
+    open my $fh, "<", "README.pod" or die "$!";
+    $parser->parse_from_file($fh);
+    close $fh;
 }
 
 1;
