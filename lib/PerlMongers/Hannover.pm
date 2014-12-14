@@ -10,9 +10,11 @@ require Exporter;
 @EXPORT_OK = qw(info);
 
 use v5.10.1;
+use Pod::Man;
 
 sub info {
-    system('perldoc', __PACKAGE__);
+    my $parser = Pod::Man->new(release => $VERSION, section => 3);
+    $parser->parse_file(__FILE__);
 }
 
 1;
