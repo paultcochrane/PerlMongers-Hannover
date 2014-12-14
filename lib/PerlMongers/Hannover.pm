@@ -10,10 +10,10 @@ require Exporter;
 @EXPORT_OK = qw(info);
 
 use v5.10.1;
-use Pod::Man;
+use Pod::Text;
 
 sub info {
-    my $parser = Pod::Man->new(release => $VERSION, section => 3);
+    my $parser = Pod::Text->new(sentence => 0, width => 78);
     $parser->parse_file(__FILE__);
 }
 
