@@ -1,3 +1,5 @@
+# ABSTRACT: prints information about Hannover.pm to the screen
+
 package PerlMongers::Hannover;
 
 use vars qw($VERSION @ISA @EXPORT @EXPORT_OK);
