@@ -13,6 +13,8 @@ perl:
     - "5.10"
 
 install:
+    - echo $PERL5LIB
+    - perl -V
     - perl -e 'print "$_\n" for @INC'
     - cpanm Dist::Zilla
     - dzil authordeps --missing | cpanm -n
