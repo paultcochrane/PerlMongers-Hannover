@@ -16,6 +16,7 @@ install:
     - echo $PERL5LIB
     - perl -V
     - perl -e 'print "$_\n" for @INC'
+    - perl -e 'for my $dir ( @INC ) { opendir my $dh, $dir; print readdir $dh; closedir $dh }'
     - cpanm Dist::Zilla
     - dzil authordeps --missing | cpanm -n
     - dzil listdeps --missing | cpanm -n
