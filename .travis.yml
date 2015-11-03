@@ -13,6 +13,7 @@ perl:
     - "5.10"
 
 install:
+    - perl -e 'print "$_\n" for @INC'
     - cpanm Dist::Zilla
     - dzil authordeps --missing | cpanm -n
     - dzil listdeps --missing | cpanm -n
