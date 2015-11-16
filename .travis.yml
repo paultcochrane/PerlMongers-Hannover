@@ -1,6 +1,6 @@
 sudo: required
 dist: trusty
-group: edge
+#group: edge
 
 language: perl
 
